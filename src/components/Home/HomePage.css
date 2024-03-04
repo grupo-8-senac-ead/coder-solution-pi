@@ -1,0 +1,11 @@
+.home-page {
+    width: 100%;
+    height: 100vh; /* Ensure the homepage fills the entire viewport height */
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    height: 100%; /* Ensure the content div fills the entire height of its parent */
+    width: 100%; /* Ensure the content div fills the entire width of its parent */
+}
