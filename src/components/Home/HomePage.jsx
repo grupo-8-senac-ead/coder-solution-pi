@@ -2,6 +2,7 @@ import './HomePage.css';
 import Header from './Header/Header';
 import Nav from './Nav/Nav';
 import Main from './Main/Main';
+import NovoProduto from './Estoque/NovoProduto';
 
 export default function HomePage() {
   return (
@@ -9,7 +10,8 @@ export default function HomePage() {
       <Header />
       <div className='content'>
         <Nav />
-        <Main />
+        {/* <Main /> */}
+        <NovoProduto />
       </div>
     </div>
   );

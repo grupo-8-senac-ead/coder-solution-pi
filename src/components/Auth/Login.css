@@ -79,10 +79,7 @@ form input{
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
-
 }
-
-
 
 .button-login {
     width: 40%;
