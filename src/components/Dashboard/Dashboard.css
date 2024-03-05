@@ -1,0 +1,147 @@
+* {
+    background-color: #FFFFFF;
+    font-family: Poppins;
+}
+
+.dashboard {
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+
+}
+
+.produtos-estoque {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 20px;
+
+}
+
+.Kpi-pizza {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 20px;
+}
+.Kpi-pizza h2{
+    margin-top: 16px;
+    color: #60B75E;
+    font-size: 30px;
+    font-weight: bold;
+
+}
+
+
+.container-azul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 200px;
+    height: 200px;
+    background-color: transparent;
+    margin-bottom: 20px;
+    border: 3px solid #004EA1;
+    border-radius: 10px;
+}
+
+.container-azul div {
+    font-size: 18px;
+    color: #FFFFFF;
+    text-align: center;
+    font-weight: bold;
+    padding: 5px;
+    width: 195px;
+    text-align: center;
+    height: 35px;
+    background-color: #004EA1;
+    border-radius: 10px 10px 0 0;
+    border: none;
+
+}
+
+.container-azul h1 {
+    color: #004EA1;
+    font-size: 40px;
+    text-align: center;
+    font-weight: bold;
+
+}
+
+.container-azul p {
+    color: #004EA1;
+    font-size: 20px;
+    text-align: center;
+}
+
+.container-vermelho {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 200px;
+    height: 200px;
+    background-color: transparent;
+    margin-bottom: 20px;
+    border: 3px solid #AE4C4C;
+    border-radius: 10px;
+}
+
+.container-vermelho div {
+    font-size: 14px;
+    color: #FFFFFF;
+    text-align: center;
+    font-weight: bold;
+    padding: 5px;
+    width: 195px;
+    text-align: center;
+    height: 35px;
+    background-color: #AE4C4C;
+    border-radius: 10px 10px 0 0;
+    border: none;
+}
+
+.container-vermelho h1 {
+    color: #AE4C4C;
+    font-size: 35px;
+    text-align: center;
+}
+
+.container-vermelho p {
+    color: #AE4C4C;
+    font-size: 20px;
+    text-align: center;
+}
+.grafico-pizza{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 110%;
+    height: 300px;
+    margin-top: 20px;
+    border: 1px solid #60B75E;
+    border-radius: 10px;
+    padding: 50px;
+
+}
+
+.grafico-pizza img {
+    width: 100%;
+}
+
+.grafico-linhas img {
+    margin-left: 80px;
+    height: 250px;
+    margin-top: 20px;
+    width: 90%;
+}

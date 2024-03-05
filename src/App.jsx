@@ -1,6 +1,5 @@
-import { useState } from 'react'
 import './App.css'
-import Header from './components/Home/Header/Header'
+import Dashboard from './components/Dashboard/Dashboard'
 
 
 
@@ -8,8 +7,7 @@ function App() {
 
   return (
     <div>
-      <Header />
-      <h1>Hello!</h1>
+      <Dashboard />
     </div>
   )
 }
