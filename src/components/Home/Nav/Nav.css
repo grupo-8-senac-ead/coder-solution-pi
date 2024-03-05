@@ -7,7 +7,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 100px 25px 25px;
+    padding: 100px 0 25px;
     background-color: rgba(0, 133, 194, 0.64); /* RGBA with opacity */
     box-sizing: border-box;
     gap: 10px;
@@ -21,8 +21,8 @@
   }
   
   .menu-option {
-    width: 200px;
-    margin: 0 auto;
+    width: 100%;
+    padding: 5px 15px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -30,6 +30,12 @@
     color: white;
     font-size: 24px;
     gap: 10px;
+  }
+
+  .menu-option:hover {
+    background-color: rgba(0, 78, 161,0.6);
+    color: #002f62;
+    cursor: pointer;
   }
   
   .nav-logo {
