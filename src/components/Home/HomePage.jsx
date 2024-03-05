@@ -2,7 +2,7 @@ import './HomePage.css';
 import Header from './Header/Header';
 import Nav from './Nav/Nav';
 import Main from './Main/Main';
-import NovoProduto from './Estoque/NovoProduto';
+import NovoProduto from './Estoque/NovoProduto/NovoProduto';
 
 export default function HomePage() {
   return (

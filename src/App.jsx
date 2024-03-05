@@ -1,18 +1,18 @@
-import Login from './components/Auth/Login'
+//import Login from './components/Auth/Login'
 //import HomePage from './components/Home/HomePage'
 import './App.css'
-import Dashboard from './components/Dashboard/Dashboard'
-import HomePage from './components/Home/HomePage'
+import Estoque from './components/Home/Estoque/Estoque'
+//import Dashboard from './components/Dashboard/Dashboard'
+//import HomePage from './components/Home/HomePage'
+//import NovoProduto from './components/Home/Estoque/NovoProduto/NovoProduto'
 
 
 function App() {
 
   return (
     <div>
-      <HomePage /> 
+      <Estoque /> 
       {/* <HomePage/> */}
-      {/* <HomePage /> */}
-      <Login />
     </div>
   )
 }
