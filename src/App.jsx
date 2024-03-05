@@ -1,13 +1,13 @@
-import './App.css'
-import Dashboard from './components/Dashboard/Dashboard'
 
+import HomePage from './components/Home/HomePage'
+import './App.css'
 
 
 function App() {
 
   return (
     <div>
-      <Dashboard />
+      <HomePage />
     </div>
   )
 }

@@ -1,0 +1,17 @@
+.main {
+    width: 100%;
+    margin: 0 auto;
+    // background-color: #00ff00;
+    display: flex;
+    flex-grow: 1; /* Allow Main to take up remaining space */
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 500px; /* Adjust padding if necessary */
+    box-sizing: border-box;
+    gap: 10px;
+}
+
+h1 {
+    font-size: 18px;
+    color: red;
+}

@@ -1,6 +1,18 @@
-.logo {
-    height: 6em;
-    padding: 1.5em;
-    will-change: filter;
-    transition: filter 300ms;
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0085C2;
+    /* background-color: rgba(0, 133, 194, 0.64); */
+    z-index: 1000;
+    box-sizing: border-box;
+  }
+
+h2 {
+    font-size: 32px;
+    color: white;
 }

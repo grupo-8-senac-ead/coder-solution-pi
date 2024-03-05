@@ -4,8 +4,9 @@ import './Header.css'
 function Header() {
 
   return (
-    <div>
-      <h1>Header</h1>
+    <div className='header'>
+      <h2>ESTOQUE</h2>
+      <img src="./user.png" alt="user logo" />
     </div>
   )
 }
