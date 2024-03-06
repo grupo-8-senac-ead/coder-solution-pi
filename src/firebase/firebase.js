@@ -1,7 +1,7 @@
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
 import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword } from "firebase/auth";
-import { getFirestore, doc, setDoc } from "firebase/firestore";
+import { getFirestore, doc, setDoc, collection, query, where, getDocs } from "firebase/firestore";
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
@@ -51,14 +51,41 @@ export const createUser = (email, password) => {
   };
 
   export const addProduct = async (uid, name, category, supplier, image, description, price) => {
-    await setDoc(doc(db, uid, "Produtos"), {
-      name: name,
-      category: category,
-      supplier: supplier,
-      image: image,
-      description: description,
-      price: price
-    });
-  }
+    try {
+        const productsRef = collection(db, "Clientes", uid, "Produtos");
+        await setDoc(doc(productsRef), {
+            name: name,
+            category: category,
+            supplier: supplier,
+            image: image,
+            description: description,
+            price: price
+        });
+        console.log("Product added successfully!");
+    } catch (error) {
+        console.error("Error adding product: ", error);
+        throw error; // Rethrow the error for handling in the calling code
+    }
+  };
+
+  export const getProduct = async (uid) => {
+    try {
+        const q = query(collection(db, "Clientes", uid, "Produtos"));
+        const querySnapshot = await getDocs(q);
+        const products = []; // Initialize an empty array to store products
+        querySnapshot.forEach((doc) => {
+            // Push each product into the array
+            products.push({
+                id: doc.id, // Use the document ID as the product ID
+                ...doc.data() // Spread the document data into the product object
+            });
+        });
+        return products; // Return the array of products
+    } catch (error) {
+        console.error("Error fetching products: ", error);
+        throw error; // Rethrow the error for handling in the calling code
+    }
+};
+
 
 export default app
