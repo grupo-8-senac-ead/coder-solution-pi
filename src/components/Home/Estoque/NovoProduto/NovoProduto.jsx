@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import './NovoProduto.css';
 import { addProduct } from '../../../../firebase/firebase';
 

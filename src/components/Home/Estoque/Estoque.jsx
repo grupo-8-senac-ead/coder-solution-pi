@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import './Estoque.css';
 import Nav from '../Nav/Nav';
 import Header from '../Header/Header';

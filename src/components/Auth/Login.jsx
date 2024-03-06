@@ -1,15 +1,18 @@
-import React, { useState } from 'react';
-import { createUser, loginUser } from '../../firebase/firebase'; // Import Firebase functions
+import { useState } from 'react';
+import { createUser } from '../../firebase/firebase'; // Import Firebase functions
+import { useAuth } from '../../context/AuthContext';
 import './Login.css';
 
 function Login() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
+  const { logIn, logOut } = useAuth(); // Get the logIn and logOut functions from the context
+
   const handleLogin = async (e) => {
     e.preventDefault();
     try {
-      await loginUser(email, password);
+      await logIn(email, password); // Use the logIn function from the context
       alert('Logged in successfully!');
       // Optionally, you can redirect the user to another page upon successful login
     } catch (error) {

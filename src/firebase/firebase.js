@@ -36,19 +36,19 @@ export const createUser = (email, password) => {
   };
   
   // Function to log in an existing user
-  export const loginUser = (email, password) => {
-    signInWithEmailAndPassword(auth, email, password)
-      .then((userCredential) => {
-        // Signed in 
-        const user = userCredential.user;
-        console.log(user)
-      })
-      .catch((error) => {
-        const errorCode = error.code;
-        const errorMessage = error.message;
-        console.log('Error: ',errorCode,errorMessage)
-      });
-  };
+  // export const loginUser = (email, password) => {
+  //   signInWithEmailAndPassword(auth, email, password)
+  //     .then((userCredential) => {
+  //       // Signed in 
+  //       const user = userCredential.user;
+  //       console.log(user)
+  //     })
+  //     .catch((error) => {
+  //       const errorCode = error.code;
+  //       const errorMessage = error.message;
+  //       console.log('Error: ',errorCode,errorMessage)
+  //     });
+  // };
 
   export const addProduct = async (uid, name, category, supplier, image, description, price) => {
     try {
@@ -87,5 +87,5 @@ export const createUser = (email, password) => {
     }
 };
 
-
+export { auth, db }
 export default app
