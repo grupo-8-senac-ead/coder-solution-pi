@@ -8,6 +8,7 @@ export const useAuth = () => useContext(AuthContext);
 
 export const AuthContextProvider = ({ children }) => {
   const [user, setUser] = useState(null);
+  const [userUid, setUserUid] = useState(null);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -23,8 +24,8 @@ export const AuthContextProvider = ({ children }) => {
     await     signInWithEmailAndPassword(auth, email, password)
     .then((userCredential) => {
       // Signed in 
-      const user = userCredential.user;
-      console.log(user.uid)
+      setUserUid(userCredential.uid)
+      // console.log(userUid)
     })
     .catch((error) => {
       const errorCode = error.code;
@@ -43,7 +44,7 @@ export const AuthContextProvider = ({ children }) => {
   };
 
   return (
-    <AuthContext.Provider value={{ user, logIn, logOut }}>
+    <AuthContext.Provider value={{ user, logIn, logOut, userUid, setUserUid }}>
       {loading ? null : children}
     </AuthContext.Provider>
   );

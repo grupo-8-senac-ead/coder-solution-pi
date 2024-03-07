@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import './NovoProduto.css';
 import { addProduct } from '../../../../firebase/firebase';
+import { useAuth } from '../../../../context/AuthContext';
 
 export default function NovoProduto() {
     const [name, setName] = useState('');
@@ -9,7 +10,9 @@ export default function NovoProduto() {
     const [image, setImage] = useState('');
     const [description, setDescription] = useState('');
     const [price, setPrice] = useState(0);
-    const uid = 'Ft1czpxk8TP3HEUU3bd5WxZPjKL2';
+    const { user } = useAuth();
+    const uid = user.uid;
+    console.log(uid)
 
     const handleSubmit = async (e) => {
         e.preventDefault();
