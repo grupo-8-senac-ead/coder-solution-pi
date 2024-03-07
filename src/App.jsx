@@ -1,24 +1,22 @@
-//import HomePage from './components/Home/HomePage'
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { AuthContextProvider } from "./context/AuthContext";
 import './App.css'
 import Estoque from './components/Home/Estoque/Estoque'
 import Login from "./components/Auth/Login";
-//import Dashboard from './components/Dashboard/Dashboard'
-//import HomePage from './components/Home/HomePage'
-//import NovoProduto from './components/Home/Estoque/NovoProduto/NovoProduto'
-
+import HomePage from './components/Home/HomePage'
 
 function App() {
-
   return (
     <AuthContextProvider>
-      <div>
-        {/* <Estoque />  */}
-        {/* <HomePage/> */}
-        <Login />
-      </div>
+      <BrowserRouter basename="/">
+        <Routes>
+          <Route path="/" element={<Login />} />
+          <Route path="/home" element={<HomePage />} />
+          <Route path="/estoque" element={<Estoque />} />
+        </Routes>
+      </BrowserRouter>
     </AuthContextProvider>
-  )
+  );
 }
 
-export default App
+export default App;

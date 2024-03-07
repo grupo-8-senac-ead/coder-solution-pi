@@ -12,11 +12,7 @@ export const AuthContextProvider = ({ children }) => {
 
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, (user) => {
-      if (user) {
-        setUser(user.uid);
-      } else {
-        setUser(null);
-      }
+      setUser(user); // Set the user object
       setLoading(false);
     });
 
@@ -38,7 +34,12 @@ export const AuthContextProvider = ({ children }) => {
   };
 
   const logOut = async () => {
-    await signOut(auth);
+    try {
+      await signOut(auth);
+      // setUser(null); // Set user to null after logout
+    } catch (error) {
+      console.error("Error logging out:", error);
+    }
   };
 
   return (

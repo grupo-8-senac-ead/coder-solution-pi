@@ -1,22 +1,26 @@
+// Login.jsx
 import { useState } from 'react';
-import { createUser } from '../../firebase/firebase'; // Import Firebase functions
+import { createUser } from '../../firebase/firebase';
 import { useAuth } from '../../context/AuthContext';
+import { useNavigate } from 'react-router-dom'; // Import useNavigate
 import './Login.css';
 
 function Login() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const [error, setError] = useState('');
+  const navigate = useNavigate(); // Get the navigate function
 
-  const { logIn, logOut } = useAuth(); // Get the logIn and logOut functions from the context
+  const { logIn } = useAuth();
 
   const handleLogin = async (e) => {
     e.preventDefault();
     try {
-      await logIn(email, password); // Use the logIn function from the context
-      alert('Logged in successfully!');
-      // Optionally, you can redirect the user to another page upon successful login
+      await logIn(email, password);
+      // Navigate to the homepage after successful login
+      navigate('/home');
     } catch (error) {
-      alert(error.message);
+      setError(error.message);
     }
   };
   
@@ -25,9 +29,8 @@ function Login() {
     try {
       await createUser(email, password);
       alert('Account created successfully!');
-      // Optionally, you can redirect the user to another page upon successful signup
     } catch (error) {
-      alert(error.message);
+      setError(error.message);
     }
   };
 
@@ -37,6 +40,7 @@ function Login() {
       <div className="login-container">
         <form>
           <h1>Login</h1>
+          {error && <div className="error">{error}</div>}
           <div className="login-input">
             <div className="input-field">
               <label htmlFor="email">Email</label>
@@ -87,4 +91,4 @@ function Login() {
   )
 }
 
-export default Login
+export default Login;

@@ -111,7 +111,7 @@
     justify-content: center;
 }
 
-.cont1 button{
+.cont1 .btn-novo-produto{
     margin-left: 200px;
     width: 250px;
     height: 50px;
@@ -126,7 +126,7 @@
 
 }
 
-.cont1 button:hover{
+.cont1 .btn-novo-produto:hover{
     background-color: #002f62;
     color: #00E6FA;
 }

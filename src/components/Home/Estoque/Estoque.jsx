@@ -3,6 +3,7 @@ import './Estoque.css';
 import Nav from '../Nav/Nav';
 import Header from '../Header/Header';
 import { getProduct } from '../../../firebase/firebase';
+import { Link } from 'react-router-dom';
 
 function Estoque() {
     const [products, setProducts] = useState([]);
@@ -43,7 +44,9 @@ function Estoque() {
                         </div>
                     </div>
                     {/* <button onClick={handleFetch}> Fetch </button> */}
-                    <button> Novo Produto</button>
+                    <Link to={"/estoque/novo-produto"} className='btn-novo-produto'>
+                        Novo Produto
+                    </Link>
                 </div>
                 <div className='cont2'>
                     <input id='search' type="text" placeholder='🔍 Pesquisar Produto' />
