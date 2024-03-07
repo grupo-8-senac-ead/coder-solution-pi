@@ -12,7 +12,6 @@ export default function NovoProduto() {
     const [price, setPrice] = useState(0);
     const { user } = useAuth();
     const uid = user.uid;
-    console.log(uid)
 
     const handleSubmit = async (e) => {
         e.preventDefault();

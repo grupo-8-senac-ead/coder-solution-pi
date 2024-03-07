@@ -4,12 +4,14 @@ import Nav from '../Nav/Nav';
 import Header from '../Header/Header';
 import { getProduct } from '../../../firebase/firebase';
 import { Link } from 'react-router-dom';
+import { useAuth } from '../../../context/AuthContext';
 
 function Estoque() {
     const [products, setProducts] = useState([]);
-
+    const { user } = useAuth();
+    
     const handleFetch = async () => {
-        const uid = 'Ft1czpxk8TP3HEUU3bd5WxZPjKL2';
+        const uid = user.uid;
         try {
             const fetchedProducts = await getProduct(uid);
             setProducts(fetchedProducts);
@@ -44,7 +46,7 @@ function Estoque() {
                         </div>
                     </div>
                     {/* <button onClick={handleFetch}> Fetch </button> */}
-                    <Link to={"/estoque/novo-produto"} className='btn-novo-produto'>
+                    <Link to={"/home"} className='btn-novo-produto'>
                         Novo Produto
                     </Link>
                 </div>

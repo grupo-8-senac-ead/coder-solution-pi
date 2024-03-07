@@ -6,7 +6,6 @@ import { useNavigate } from 'react-router-dom'; // Import useNavigate
 function Header() {
   const { user, logOut } = useAuth();
   const navigate = useNavigate(); // Get the navigate function
-  console.log("User:", user.uid); // Log the user object
 
   const handleLogout = () => {
     console.log("Logging out...");
