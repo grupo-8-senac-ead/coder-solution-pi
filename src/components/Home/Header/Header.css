@@ -12,6 +12,22 @@
     box-sizing: border-box;
   }
 
+  .header button{
+    width: 50px;
+    height: auto;
+    background-color: transparent;
+    cursor: pointer;
+  }
+  .header button img:hover{
+    width: 55px;
+    height: auto;
+    transition: 0.3s;
+  }
+
+  .header button img{
+    width: 40px;
+  }
+
 h2 {
     font-size: 32px;
     color: white;

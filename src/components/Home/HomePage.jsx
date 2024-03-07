@@ -1,8 +1,10 @@
 import './HomePage.css';
 import Header from './Header/Header';
 import Nav from './Nav/Nav';
-import Main from './Main/Main';
-import NovoProduto from './Estoque/NovoProduto/NovoProduto';
+//import Main from './Main/Main';
+//import NovoProduto from './Estoque/NovoProduto/NovoProduto';
+
+import Dashboard from './Dashboard/Dashboard';
 
 export default function HomePage() {
   return (
@@ -11,7 +13,7 @@ export default function HomePage() {
       <div className='content'>
         <Nav />
         {/* <Main /> */}
-        <NovoProduto />
+        <Dashboard />
       </div>
     </div>
   );

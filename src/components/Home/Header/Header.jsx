@@ -18,7 +18,7 @@ function Header() {
     <div className='header'>
       <h2>ESTOQUE</h2>
       <button onClick={() => handleLogout()}>
-        <img src="./user.png" alt="user logo" />
+        <img src="../../../../public/do-utilizador.png" alt="user logo" />
       </button>
     </div>
   )

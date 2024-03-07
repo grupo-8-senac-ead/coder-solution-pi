@@ -9,113 +9,10 @@
     gap: 20px;
 
 }
-
-.cont1 {
-    margin-bottom: 40px;
-    margin-top: -200px;
-    width: 100%;
-    height: auto;
-    gap: 20px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    height: 80px;
-}
-
-.cont1 .container-azul {
-    height: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-    border: 3px solid #004EA1;
-
-    border-radius: 10px;
-}
-
-.cont1 .container-azul .contazul {
-    font-size: 28px;
-    color: #FFFFFF;
-    font-weight: bold;
-    width: 195px;
-    text-align: center;
-    align-items: center;
-    height: 100%;
-    text-wrap: wrap;
-    line-height:2rem;
-    background-color: #004EA1;
-}
-
-
-
-.cont1 .container-azul h1 {
-    color: #004EA1;
-    font-size:35px;
-    font-weight: bold;
-}
-
-.cont1 .container-azul p{
-    font-size: 18px;
-    color: #004EA1;
-}
-
-#total{
-    width: 30%;
-    margin-right: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.cont1 .container-vermelho{
-    height: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-    border: 3px solid #AE4C4C;
-    border-radius: 10px;
-}
-
-.cont1 .container-vermelho .contvermelho{
-    font-size: 28px;
-    color: #FFFFFF;
-    font-weight: bold;
-    width: 195px;
-    text-align: center;
-    height: 100%;
-    background-color: #AE4C4C;
-}
-
-.cont1 .container-vermelho h1 {
-    color: #AE4C4C;
-    font-size:35px;
-    font-weight: bold;
-}
-
-.cont1 .container-vermelho p{
-    font-size: 18px;
-    color: #AE4C4C;
-}
-
-#totalvermelho{
-    width: 30%;
-    margin-right: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.cont1 .btn-novo-produto{
+.btn-novo-produto{
     margin-left: 200px;
     width: 250px;
     height: 50px;
-    background-color: #00E6FA;
     color: #002f62;
     border: 1px solid #002f62;
     border-radius: 5px;
@@ -123,12 +20,15 @@
     font-weight: bold;
     padding: 10px;
     cursor: pointer;
+    text-align: center;
+    text-decoration: none;
 
 }
 
-.cont1 .btn-novo-produto:hover{
+.btn-novo-produto:hover{
     background-color: #002f62;
     color: #00E6FA;
+    transition: 0.3s ease all;
 }
 
 .cont2 {

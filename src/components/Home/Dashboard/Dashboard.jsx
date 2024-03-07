@@ -1,5 +1,5 @@
-import Header from '../Home/Header/Header'
-import Nav from '../Home/Nav/Nav'
+import Header from '../Header/Header'
+import Nav from '../Nav/Nav'
 import './Dashboard.css'
 
 function Dashboard() {
