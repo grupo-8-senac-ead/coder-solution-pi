@@ -4,6 +4,8 @@ import './App.css'
 import Estoque from './components/Home/Estoque/Estoque'
 import Login from "./components/Auth/Login";
 import HomePage from './components/Home/HomePage'
+import NovoProduto from './components/Home/Estoque/NovoProduto/NovoProduto'
+import Dashboard from './components/Home/Dashboard/Dashboard';
 
 function App() {
   return (
@@ -13,6 +15,8 @@ function App() {
           <Route path="/" element={<Login />} />
           <Route path="/home" element={<HomePage />} />
           <Route path="/estoque" element={<Estoque />} />
+          <Route path="/dashboard" element={<Dashboard />} />
+          <Route path="/estoque/novo-produto" element={<NovoProduto />} />
         </Routes>
       </BrowserRouter>
     </AuthContextProvider>

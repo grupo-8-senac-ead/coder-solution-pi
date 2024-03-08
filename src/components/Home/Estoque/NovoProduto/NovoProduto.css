@@ -1,10 +1,17 @@
+
+.content{
+    margin-left: 15%;
+    display: flex;
+    justify-content: space-between;
+    height: 100vh;
+    width: 85%;
+}
 .novo-produto {
     width: 100%;
     display: flex;
     flex-grow: 1;
     flex-direction: column;
-    align-items: center;
-    margin: 100px 300px; /* Adjust padding if necessary */
+    margin: 100px; /* Adjust padding if necessary */
     box-sizing: border-box;
     gap: 10px;
     /* background-color: #00ff00 */
@@ -14,17 +21,46 @@ h1 {
     font-size: 40px;
     font-weight: bold;
     color: #002F62;
+    text-align: center;
 }
 
 .input-container {
+    width: 100% ;
+    height: 500px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    gap: 50px;
+    justify-content: space-around;
     /* background-color: #00ff00 */
+    border: 1px solid #0085C2;
+    box-shadow: 10px 16px 20px -9px rgba(153,153,153,0.81);
+    border-radius: 10px;
+    padding: 20px;
+}
+.input-container .container-1{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    
 }
 
+.input-container .container-1 .name, .category, .supplier,.price,.image,.description {
+    width: 100%;
+    
+}
+
+
+ textarea {
+    height: 200px;
+}
+.Produto{
+    margin-top: 15px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+}
 input, textarea{
     width: 80%;
     padding: 10px;
@@ -50,11 +86,12 @@ input, textarea{
     border: none;
     border-radius: 5px;
     outline: none;
-    background-color: #60B75E;
-    color: #fff;
+    border: 2px solid #4CAF50;
+    color: #4CAF50;
     font-size: 16px;
     cursor: pointer;
     transition: 0.3s;
+    font-weight: bold;
 }
 
 .button-clear {
@@ -63,11 +100,22 @@ input, textarea{
     border: none;
     border-radius: 5px;
     outline: none;
-    background-color: #ccc;
-    color: #fff;
+    border: 2px solid #464646;
+    color: #464646;
     font-size: 16px;
+    font-weight: bold;
     cursor: pointer;
     transition: 0.3s;
+}
+
+.button-clear:hover {
+    color: #fff;
+    background-color: #0085C2;
+}
+
+.button-add:hover {
+    color: #fff;
+    background-color: #4CAF50;
 }
 
 .button-login button:hover, .button-signin button:hover{

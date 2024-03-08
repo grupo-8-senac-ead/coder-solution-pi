@@ -30,29 +30,14 @@ function Estoque() {
             <Nav />
             <Header />
             <div className="estoque">
-                <div className='cont1'>
-                    <div className="container-azul">
-                        <div className='contazul' >Total Estoque</div>
-                        <div id="total">
-                            <h1>85</h1>
-                            <p>Produtos</p>
-                        </div>
-                    </div>
-                    <div className="container-vermelho">
-                        <div className="contvermelho">Estoque</div>
-                        <div id="totalvermelho">
-                            <h1>15</h1>
-                            <p>Produtos</p>
-                        </div>
-                    </div>
-                    {/* <button onClick={handleFetch}> Fetch </button> */}
-                    <Link to={"/home"} className='btn-novo-produto'>
-                        Novo Produto
-                    </Link>
-                </div>
+                {/* <button onClick={handleFetch}> Fetch </button> */}
+
                 <div className='cont2'>
                     <input id='search' type="text" placeholder='🔍 Pesquisar Produto' />
                     <select name="Categoria" id="select"></select>
+                    <Link to={"/estoque/novo-produto"} className='btn-novo-produto'>
+                        Novo Produto
+                    </Link>
                 </div>
                 <div className='cont3'>
                     <table className="table table-hover">

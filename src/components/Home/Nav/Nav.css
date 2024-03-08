@@ -30,14 +30,18 @@
     color: white;
     font-size: 24px;
     gap: 10px;
+    text-decoration: none;
   }
 
   .menu-option:hover {
-    background-color: rgba(0, 78, 161,0.6);
+    background-color: #4e9ff7;
     color: #002f62;
     cursor: pointer;
+    transition: 0.3s;
   }
   
   .nav-logo {
     margin-top: auto; /* Move the image closer to the bottom */
   }
+
+  
