@@ -6,8 +6,8 @@ function Dashboard() {
 
     return (
         <div>
-            <Header />
-            <div><Nav/></div>
+            {/* <Header /> */}
+            {/* <div><Nav/></div> */}
             <div className="dashboard">
 
                 <div className="Kpi-pizza">
@@ -28,13 +28,13 @@ function Dashboard() {
                     <div className="grafico-pizza">
                         <h2>Produtos Vendidos</h2>
                         <div>
-                            <img src="/public/grafico-pizza.png" alt="Grafico de pizza" />
+                            <img src="./grafico-pizza.png" alt="Grafico de pizza" />
                         </div>
                     </div>
                 </div>
                 <div className='grafico-linhas'>
                     <div>
-                        <img src="/public/graficos-linha.png" alt="Grafico de linhas" />
+                        <img src="./graficos-linha.png" alt="Grafico de linhas" />
                     </div>
                 </div>
             </div>

@@ -10,7 +10,7 @@ import Dashboard from './components/Home/Dashboard/Dashboard';
 function App() {
   return (
     <AuthContextProvider>
-      <BrowserRouter basename="/">
+      <BrowserRouter basename="/coder-solution-pi/">
         <Routes>
           <Route path="/" element={<Login />} />
           <Route path="/home" element={<HomePage />} />

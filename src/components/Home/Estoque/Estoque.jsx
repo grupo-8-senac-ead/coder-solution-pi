@@ -70,8 +70,8 @@ function Estoque() {
                                     <td>{product.category}</td>
                                     <td>0</td>
                                     <td>R$ {product.price}</td>
-                                    <td><a href=""><img src="../../../../public/price-tag.png" alt="" /></a></td>
-                                    <td><a href=""><img src="../../../../public/pencil_599294.png" alt="" /></a></td>
+                                    <td><a href=""><img src="./price-tag.png" alt="" /></a></td>
+                                    <td><a href=""><img src="./pencil_599294.png" alt="" /></a></td>
                                 </tr>
                             ))}
                         </tbody>

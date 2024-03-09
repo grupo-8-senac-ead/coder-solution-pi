@@ -36,7 +36,7 @@ function Login() {
 
   return (
     <div className="login">
-      <img src="/CODERLOGO.png" alt="logo coder solution" />
+      <img src="./CODERLOGO.png" alt="logo coder solution" />
       <div className="login-container">
         <form>
           <h1>Login</h1>
@@ -83,7 +83,7 @@ function Login() {
             <div className='linha'></div>
             <p>Esqueceu sua senha ? <a>Clique aqui</a></p>
             <span>Quem Somos?</span>
-            <img src="/CODERLOGO.png" alt="logo coder solution" />
+            <img src="./CODERLOGO.png" alt="logo coder solution" />
           </div>
         </form>
       </div>
