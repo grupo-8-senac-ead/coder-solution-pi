@@ -39,7 +39,17 @@
 
 
 <h3>Apresentação do produto: </h3>
-<p> </p>
+<p>No aplicativo, foram selecionadas diversas funcionalidades para o projeto em desenvolvimento. Dentre elas, destacam-se o cadastro de clientes, login, cadastro de produtos e visualização de estoque. </p>
+<h3>Cadastro:</h3>
+<p>Ao considerar a experiência do usuário, é fundamental garantir uma interface intuitiva e eficiente. Na tela inicial do aplicativo, os usuários encontrarão campos dedicados para inserção de e-mail e senha. Ao preencher esses campos, basta clicar no botão de cadastro para efetuar o registro de clientes. Uma vez completado o processo, uma mensagem de confirmação será exibida, informando que a conta foi criada com sucesso. Esses dados de login serão então registrados na base de dados do Firebase, proporcionando aos usuários acesso imediato ao site.</p>
+<h3>Login:</h3>
+<p>Para acessar a área restrita do aplicativo, os usuários devem fazer login utilizando as credenciais cadastradas anteriormente. Após inserir os dados de login corretamente, basta clicar no botão correspondente para entrar automaticamente na dashboard do aplicativo. Nessa área, os usuários terão acesso a estatísticas detalhadas sobre os produtos cadastrados, fornecendo insights valiosos para a gestão eficaz do estoque.</p>
+<h3>Apresentação página de visualização de estoque:</h3>
+<p>Na dashboard do aplicativo, os usuários encontrarão um menu lateral com várias opções, incluindo o acesso à aba de estoque. Ao clicar neste ícone, eles serão direcionados para a seção de estoque de produtos. Nessa área, serão apresentadas informações detalhadas sobre os produtos cadastrados, como nome, categoria e quantidade disponível em estoque. Essa funcionalidade oferece aos usuários uma visão abrangente do status atual do estoque, permitindo que tomem decisões informadas em relação à gestão de produtos.</p>
+
+<h3>Adicionar novo produto:</h3>
+<p>Para adicionar novos produtos ao sistema, os usuários podem acessar a opção "Novo Produto" localizada no canto superior direito da tela de estoque. Ao clicar neste botão, serão direcionados para uma página de cadastro, onde poderão inserir detalhes essenciais sobre o produto, como nome, categoria, preço, imagem, fornecedor e descrição. Uma vez preenchidos todos os campos obrigatórios, basta clicar no botão "Adicionar Produto" para que o novo item seja registrado na base de dados do Firebase e imediatamente adicionado à tela de estoque, garantindo a atualização em tempo real do sistema.</p>
+
 
  
 
