@@ -66,10 +66,16 @@ Para configurar o Firebase em nosso projeto, precisaremos criar um projeto no co
 <img src="/public/registro.gif">
 <p>Para adicionar novos produtos ao sistema, os usuários podem acessar a opção "Novo Produto" localizada no canto superior direito da tela de estoque. Ao clicar neste botão, serão direcionados para uma página de cadastro, onde poderão inserir detalhes essenciais sobre o produto, como nome, categoria, preço, imagem, fornecedor e descrição. Uma vez preenchidos todos os campos obrigatórios, basta clicar no botão "Adicionar Produto" para que o novo item seja registrado na base de dados do Firebase e imediatamente adicionado à tela de estoque, garantindo a atualização em tempo real do sistema.</p>
 
-
- 
-
+<h3>Banco de dados firebase:</h3>
+<img src="/public/Firebase-bd-login.png">
+<img src="/public/Firebase-bd-prod.png">
+<p>Conforme mostrado, o Firebase foi o banco de dados utilizado para armazenar informações de login, cadastro de novos usuários e produtos. As imagens mostram os usuários e os produtos cadastrados durante os primeiros testes do aplicativo.</p>
 
 <h2 > Conclusão </h2>
-<p> </p>
+<p>A modelagem do projeto proposto na primeira etapa foi concluída com sucesso nesta segunda etapa. Utilizamos ferramentas confiáveis e reconhecidas, como React.js para o frontend, Node.js para o backend e o Firebase como o banco de dados. Essas tecnologias foram escolhidas devido à sua eficiência e familiaridade para os integrantes do grupo, o que permitiu um desenvolvimento consistente e eficaz do protótipo. Com isso, avançamos significativamente em direção à implementação do projeto final, estabelecendo uma base sólida para as próximas etapas. Estamos confiantes de que as escolhas feitas e o progresso alcançado nos permitirão atingir nossos objetivos com êxito.
+
+Em resumo, o projeto demonstrou o potencial das abordagens ágeis para o desenvolvimento de software, fornecendo uma solução eficaz e inovadora para o gerenciamento de estoque e produtos. Conseguimos atender às necessidades dos usuários de forma rápida e eficiente, garantindo a entrega de um produto de alta qualidade.
+
+À medida que avançamos para futuras iterações do projeto, estamos comprometidos em continuar aprimorando e expandindo as funcionalidades do aplicativo, sempre com foco no fornecimento de valor agregado aos nossos clientes.
+</p>
 </br>
