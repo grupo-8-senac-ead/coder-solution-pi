@@ -13,18 +13,6 @@ function Nav() {
           <img src="./estoque-logo.png" alt="estoque-logo" />
           <p>Estoque</p>
         </Link>
-        <Link className='menu-option'>
-          <img src="./precificacao-logo.png" alt="precificacao-logo" />
-          <p>Precificação</p>
-        </Link>
-        <Link className='menu-option'>
-          <img src="./pdv-logo.png" alt="pdv-logo" />
-          <p>PDV</p>
-        </Link>
-        <Link className='menu-option'>
-          <img src="./configuracao-logo.png" alt="configuracao-logo" />
-          <p>Configuração</p>
-        </Link>
       <img src="./coderso-logo.png" alt="Coderso Logo" className='nav-logo'/>
     </nav>
   );
