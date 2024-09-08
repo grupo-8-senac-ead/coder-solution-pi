@@ -4,6 +4,7 @@ import { addProduct } from '../../../firebase/firebase';
 import Nav from '../Nav/Nav';
 import Header from '../Header/Header';
 import { useAuth } from '../../../context/AuthContext';
+import { useNavigate } from 'react-router-dom';
 
 export default function NovoProduto() {
     const [name, setName] = useState('');
@@ -14,6 +15,7 @@ export default function NovoProduto() {
     const [price, setPrice] = useState(0);
     const { user } = useAuth();
     const uid = user.uid;
+    const navigate = useNavigate();
 
     const handleSubmit = async (e) => {
         e.preventDefault();
@@ -25,6 +27,7 @@ export default function NovoProduto() {
             alert('Product added successfully!');
             // Optionally, you can reset the form after successful submission
             // resetForm();
+            navigate('/estoque');
         } catch (error) {
             alert(error.message);
         }
