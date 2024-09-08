@@ -35,7 +35,7 @@ function Estoque() {
                 <div className='cont2'>
                     <input id='search' type="text" placeholder='🔍 Pesquisar Produto' />
                     <select name="Categoria" id="select"></select>
-                    <Link to={"/estoque/novo-produto"} className='btn-novo-produto'>
+                    <Link to={"/novo-produto"} className='btn-novo-produto'>
                         Novo Produto
                     </Link>
                 </div>
