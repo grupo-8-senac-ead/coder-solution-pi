@@ -24,15 +24,15 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    width: 80%;
-    
+    width: 100%;
+    padding-left: 10%;    
 }
+
 .Kpi-pizza h2{
     color: #60B75E;
     font-size: 20px;
     margin-bottom: 10px;
-   font-weight: bold;
-
+    font-weight: bold;
 }
 
 

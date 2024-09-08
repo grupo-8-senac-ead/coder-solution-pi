@@ -1,9 +1,9 @@
 import { useState } from 'react';
 import './NovoProduto.css';
-import { addProduct } from '../../../../firebase/firebase';
-import Nav from '../../Nav/Nav';
-import Header from '../../Header/Header';
-import { useAuth } from '../../../../context/AuthContext';
+import { addProduct } from '../../../firebase/firebase';
+import Nav from '../Nav/Nav';
+import Header from '../Header/Header';
+import { useAuth } from '../../../context/AuthContext';
 
 export default function NovoProduto() {
     const [name, setName] = useState('');

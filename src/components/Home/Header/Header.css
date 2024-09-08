@@ -19,8 +19,7 @@
     cursor: pointer;
   }
   .header button img:hover{
-    width: 55px;
-    height: auto;
+    scale: 1.25;
     transition: 0.3s;
   }
 

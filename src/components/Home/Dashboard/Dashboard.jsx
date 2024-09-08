@@ -1,5 +1,3 @@
-import Header from '../Header/Header'
-import Nav from '../Nav/Nav'
 import './Dashboard.css'
 
 function Dashboard() {
@@ -33,9 +31,7 @@ function Dashboard() {
                     </div>
                 </div>
                 <div className='grafico-linhas'>
-                    <div>
-                        <img src="./graficos-linha.png" alt="Grafico de linhas" />
-                    </div>
+                    <img src="./graficos-linha.png" alt="Grafico de linhas" />
                 </div>
             </div>
         </div>

@@ -97,7 +97,6 @@
 
 .table td img:hover{
     cursor: pointer;
-    width: 25px;
-    height: 25px;
+    scale: 1.25;
     transition: 0.3s ease all;
 }
